@@ -1,0 +1,446 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+  width: 100%;
+  height: auto;
+
+}
+/*-------------NAVIGATION BAR --------*/
+
+/*.navbar {
+  display: grid;
+  grid-template-columns: 60% 20% 20%;
+  grid-template-rows: repeat(2, 100%);
+  grid-template-areas:
+  "logo home menu"
+  "logo about contact";
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  background-color: #f6b319;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+
+}
+.logo {
+  grid-area: logo;
+  padding: 20px 20px;
+  font-family: cursive;
+  color: #006600;
+  font-size: 30px;
+  padding: 0px;
+
+}
+.home {
+  grid-area: home;
+  background: #f9cf6c;
+  padding: 40px 20px;
+
+}
+.menu {
+  grid-area: menu;
+  background: #f9cf6c;
+  padding: 40px 20px;
+}
+.about {
+  grid-area: about;
+  background: #f9cf6c;
+  padding: 40px 20px;
+}
+.contact {
+  grid-area: contact;
+  background: #f9cf6c;
+  padding: 40px 20px;
+}
+*/
+/*-------------^NAVIGATION BAR^ --------*/
+
+/*-------------CONTENT --------*/
+
+
+
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: repeat(3, 30%);
+  grid-template-areas:
+  "main-image main-image main-image"
+  "main-image main-image main-image"
+  "small-image1 small-image2 small-image3";
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  justify-content: center;
+  grid-gap: 30px;
+
+
+}
+.main-image {
+  grid-area: main-image;
+
+}
+.small-image1 {
+  grid-area: small-image1;
+  position: relative;
+}
+.small-image1:hover {
+  border-color: #ffffe6;
+  filter: blur(0px);
+}
+.menu-text {
+  position: absolute;
+  transform: translate(0px, -110%);
+  letter-spacing: 2px;
+  background-color: #161616;
+  justify-self: center;
+  width: 100%;
+  text-align: center;
+  opacity: 0.9;
+  font-size: 100%;
+
+}
+.menu-textblock {
+  background-color: black;
+  color: white
+}
+.small-image2 {
+  grid-area: small-image2;
+  position: relative;
+}
+
+.small-image2:hover {
+  border-color: #ffffe6;
+  filter: blur(0px);
+}
+.specials {
+  position: absolute;
+  transform: translate(0px, -110%);
+  letter-spacing: 2px;
+  background-color: #161616;
+  justify-self: center;
+  width: 100%;
+  text-align: center;
+  opacity: 0.9;
+  font-size: 100%;
+
+}
+.address-textblock {
+  background-color: black;
+  color: white
+}
+
+
+.small-image3 {
+  grid-area: small-image3;
+  position: relative;
+}
+.small-image3:hover {
+  border-color: #ffffe6;
+  filter: blur(0px);
+}
+.map-text {
+  position: absolute;
+  transform: translate(0px, -110%);
+  letter-spacing: 2px;
+  background-color: #161616;
+  justify-self: center;
+  width: 100%;
+  text-align: center;
+  opacity: 0.9;
+  font-size: 100%;
+}
+
+.map-textblock {
+  background-color: black;
+  color: white;
+}
+
+/*-------------^CONTENT^ --------*/
+
+/*-------------FOOTER --------*/
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+  grid-template-rows: repeat(1, fr);
+  grid-template-areas:
+  "hours address quote";
+  margin-top: 20px;
+
+}
+.hours {
+  grid-area: hours;
+  background-color: #161616;
+  padding: 50px;
+  word-spacing: 10px;
+
+}
+.address {
+  grid-area: address;
+  background-color: #161616;
+  padding: 50px;
+
+}
+.quote {
+  grid-area: quote;
+  background-color: #161616;
+  padding: 50px;
+
+}
+#deliv {
+  color: green;
+  font-size: 13px;
+}
+#hours {
+  font-size: 25px;
+}
+#address {
+  font-size: 25px;
+}
+
+
+/*-------------^FOOTER^ --------*/
+
+/*---- MEDIA QUERIES For Nav Bar---------*/
+            /* 880px screen */
+@media screen and (min-width: 880px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 48% 13% 13% 13% 13% ;
+    grid-template-rows: repeat(1, 100%);
+    grid-template-areas:
+    "logo home menu about contact";
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: #f6b319;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+  }
+}
+.logo {
+  grid-area: logo;
+  padding: 20px 20px;
+  font-family: cursive;
+  color: #006600;
+  font-size: 30px;
+  padding: 0px;
+
+}
+.home {
+  grid-area: home;
+  background: #f9cf6c;
+  padding: 40px 20px;
+
+}
+.menu {
+  grid-area: menu;
+  background: #f9cf6c;
+  padding: 40px 20px;
+}
+.about {
+  grid-area: about;
+  background: #f9cf6c;
+  padding: 40px 20px;
+}
+.contact {
+  grid-area: contact;
+  background: #f9cf6c;
+  padding: 40px 20px;
+}
+
+       /* 880px screen */
+
+
+
+
+
+
+
+}
+        /* 600px screen */
+
+
+       /* 880px screen */
+
+
+
+
+
+
+
+}
+        /* 600px screen */
+@media screen and (min-width: 600px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    grid-template-rows: repeat(2, 100%);
+    grid-template-areas:
+    "logo home menu about contact";
+
+
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: #f6b319;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+  }
+  .logo {
+    grid-area: logo;
+  }
+  .home{
+    grid-area: home;
+  }
+  .menu {
+    grid-area: menu;
+  }
+  .about {
+    grid-area: about;
+  }
+.contact {
+  grid-area: contact;
+}
+
+/*  .navbar {
+    display: grid;
+    grid-template-columns: 40 20% 20%;
+    grid-template-rows: repeat(auto, 100%);
+    grid-template-areas:
+    "logo home menu"
+    "logo about contact";
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: #f6b319;
+    text-align: center;
+    padding: 20px;
+    font-size: 125.0%;
+    height: 20px;
+
+
+  }
+  .logo {
+    grid-area: logo;
+    padding: 20px 20px;
+    font-family: cursive;
+    color: #006600;
+    font-size: 30px;
+    padding: 0px;
+
+
+  }
+  .home {
+    grid-area: home;
+    background: #f9cf6c;
+    padding: 125.0% 125.0%;
+    margin-top: 0px;
+
+
+  }
+  .menu {
+    grid-area: menu;
+    background: #f9cf6c;
+    padding: 20px 20px 0px 20px;
+    margin-top: 0px;
+  }
+  .about {
+    grid-area: about;
+    background: #f9cf6c;
+    padding:20px 20px 0px 20px;;
+    margin-top: 0px;
+
+  }
+  .contact {
+    grid-area: contact;
+    background: #f9cf6c;
+    padding: 20px 20px 0px 20px;;
+    margin-top: 0px;
+
+  }*/
+}
+        /* 600px screen */
+
+  /*----^ MEDIA QUERIES For Nav Bar^---------*/
+
+  /*---- MEDIA QUERIES For Content---------*/
+@media screen and (min-width: 880px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(3, 30%);
+    grid-template-areas:
+    "main-image main-image main-image"
+    "main-image main-image main-image"
+    "small-image1 small-image2 small-image3";
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    justify-content: center;
+    grid-gap: 30px;
+
+
+  }
+
+}
+  /*-------------880px --------*/
+/*----^ MEDIA QUERIES For Content^---------*/
+  /*-------------600px --------*/
+  @media screen and (max-width: 600px) {
+  .content {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(4,200px);
+    grid-template-areas:
+    "main-image"
+    "small-image1"
+    "small-image2"
+    "small-image3";
+  }
+  .main-image {
+    grid-area: main-image;
+  }
+  .small-image1 {
+    grid-area: small-image1;
+  }
+  .small-image2 {
+    grid-area: small-image2;
+  }
+  .small-image3 {
+    grid-area: small-image3;
+  }
+}
+
+
+
+
+
+
+
+/*----^ MEDIA QUERIES For Content^---------*/
+/*---- MEDIA QUERIES For Footer---------*/
+@media screen and(min-width: 880px) {
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: repeat(1, fr);
+    grid-template-areas:
+    "hours address quote";
+    margin-top: 20px;
+
+  }
+
+}
+/*----^ MEDIA QUERIES For Footer^---------*/
