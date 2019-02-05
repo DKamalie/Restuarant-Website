@@ -6,9 +6,32 @@
 body {
   font-size: 16px;
   color: #fff;
-  background-color: #61122f;
+  background-color: #E5E9EA;
   font-family: 'Oxygen', sans-serif;
 }
+.navbar a:link {
+  color: #000;
+}
+.navbar a:visited {
+  color: #000;
+}
+.navbar a:hover {
+  color: grey;
+  transition: 0.2s;
+  background-color: #fff;
+  border-radius: 25px;
+}
+.navbar a:active {
+  color: blue;
+}
+.navbar a {
+  text-decoration: none;
+  padding: 20px;
+  background-color: #D8D8C5;
+  border-radius: 5px;
+
+}
+
 /*-------------NAVIGATION BAR --------*/
 /*.navbar {
   display: grid;
@@ -66,10 +89,12 @@ padding: 40px 20px;
 }
 .menu-details h1 {
   text-align: center;
+  color: #000;
 }
 .menu-details p {
   text-align: center;
   margin-top:10px;
+  color: #000;
 }
 .cards {
   display: grid;
@@ -463,7 +488,7 @@ padding: 40px 20px;
     margin-top: 30px;
     margin-left: 60px;
     margin-right: 60px;
-    background-color: #f6b319;
+    background-color: #100716;
     text-align: center;
     padding: 20px;
     font-size: 20px;
@@ -476,28 +501,33 @@ padding: 40px 20px;
   color: #006600;
   font-size: 30px;
   padding: 0px;
+  color: #FFF;
 
 }
 .home {
   grid-area: home;
-  background: #f9cf6c;
+  background: #100716;
   padding: 40px 20px;
+  color: #FFF;
 
 }
 .menu {
   grid-area: menu;
-  background: #f9cf6c;
+  background: #100716;
   padding: 40px 20px;
+  color: #FFF;
 }
 .about {
   grid-area: about;
-  background: #f9cf6c;
+  background: #100716;
   padding: 40px 20px;
+  color: #FFF;
 }
 .contact {
   grid-area: contact;
-  background: #f9cf6c;
+  background: #100716;
   padding: 40px 20px;
+  color: #FFF;
 }
 
        /* 880px screen */

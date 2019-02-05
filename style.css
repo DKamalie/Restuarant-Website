@@ -6,12 +6,89 @@
 body {
   font-size: 16px;
   color: #fff;
-  background-color: #61122f;
+  background-color: #E5E9EA;
   font-family: 'Oxygen', sans-serif;
   width: 100%;
   height: auto;
 
+
+/* --------------ALL LINK STYLES----------*/
 }
+.navbar a:link {
+  color: #000;
+}
+.navbar a:visited {
+  color: #000;
+}
+.navbar a:hover {
+  color: grey;
+  transition: 0.2s;
+  background-color: #fff;
+  border-radius: 25px;
+}
+.navbar a:active {
+  color: blue;
+}
+.navbar a {
+  text-decoration: none;
+  padding: 20px;
+  background-color: #D8D8C5;
+  border-radius: 5px;
+
+}
+
+.small-image1:hover {
+  font-size: larger;
+  transition: 0.2s;
+  background-color: #fff;
+}
+.small-image1 a:link{
+  color: #FFF;
+}
+.small-image1 a:visited{
+  color: #FFF;
+}
+.small-image1 img:hover {
+
+  transition: 0.9s;
+}
+.small-image1 a:hover{
+
+  transition: 0.5s;
+  font-size: larger;
+  filter: drop-shadow(2px 8px 1px grey);
+}
+.small-image1 a:active{
+
+}
+.small-image2:hover {
+  font-size: larger;
+  transition: 0.2s;
+}
+.small-image2 a:link{
+  color: #FFF;
+}
+.small-image2 a:visited{
+  color: #FFF;
+}
+.small-image2 img:hover {
+
+  transition: 0.9s;
+}
+.small-image2 a:hover{
+
+  transition: 0.5s;
+  font-size: larger;
+  filter: drop-shadow(2px 8px 1px grey);
+}
+.small-image2 a:active{
+
+}
+#menulinkblur:hover {
+  filter: blur(0px) !important;
+}
+
+/*---------------^LINK STYLE^---------*/
 /*-------------NAVIGATION BAR --------*/
 
 /*.navbar {
@@ -221,7 +298,7 @@ body {
     margin-top: 30px;
     margin-left: 60px;
     margin-right: 60px;
-    background-color: #f6b319;
+    background-color: #100716;
     text-align: center;
     padding: 20px;
     font-size: 20px;
@@ -234,28 +311,34 @@ body {
   color: #006600;
   font-size: 30px;
   padding: 0px;
+  color: #FFF;
 
 }
 .home {
   grid-area: home;
-  background: #f9cf6c;
+  background: #100716;
   padding: 40px 20px;
+  color: #FFF;
+
 
 }
 .menu {
   grid-area: menu;
-  background: #f9cf6c;
+  background: #100716;
   padding: 40px 20px;
+  color: #FFF;
 }
 .about {
   grid-area: about;
-  background: #f9cf6c;
+  background: #100716;
   padding: 40px 20px;
+  color: #FFF;
 }
 .contact {
   grid-area: contact;
-  background: #f9cf6c;
+  background: #100716;
   padding: 40px 20px;
+  color: #FFF;
 }
 
        /* 880px screen */
