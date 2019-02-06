@@ -6,12 +6,13 @@
 body {
   font-size: 16px;
   color: #fff;
-  background-image: url("./tile22.jpg");
+  background-color: #E5E9EA;
   font-family: 'Oxygen', sans-serif;
   width: 100%;
   height: auto;
 
 }
+
 /* --------------ALL LINK STYLES----------*/
 }
 .navbar a:link {
@@ -34,7 +35,6 @@ body {
   padding: 20px;
   background-color: #D8D8C5;
   border-radius: 5px;
-  background-image: url("./navwood.jpg");
 
 }
 
@@ -86,20 +86,98 @@ padding: 40px 20px;
 }*/
 
 /*------------^NAVIGATION BAR^ --------*/
-/* -----------CONTENT---------------*/
-.aboutwebsite {
+/*-------------CONTENT----------------*/
+form {
+
+
+  border: rgb(128, 255, 255) solid 2px;
+  padding: 10px;
   margin-left: 60px;
   margin-right: 60px;
-  margin-top: 20px;
-  font-size: 18px;
-  color: #fff;
-}
-.aboutwebsite h1 {
+  grid-template-columns: repeat(autofit, 600px);
+  grid-template-rows: 1fr;
   text-align: center;
+
+}
+form input {
+  width: 40%;
+  height: 30px;
+  text-align: center;
+  margin-left:60px;
+  margin-right: 60px;
+  margin-bottom: 4px;
+  overflow: auto;
+  background-color: #ffd3b6;
+  padding: 0px 0.5%;
+  border: 2px solid rgba(128, 255, 255, 0.6);
+
+}
+form h1 {
+  text-align: center;
+  color: #000;
+}
+form p {
+  font-family: 'Titillium Web', sans-serif;
+  color: #000;
+}
+}
+
+#pg {
+  text-align: center;
+  font-size: 10px;
+}
+
+#rate {
+  background-color:  #ffd3b6;
+  color: #dcedc1 ;
+}
+#rate:hover {
+  background:#a8e6cf;
+}
+
+#firstfield {
+  padding-left: 2px;
+  background-color: #f9cf6c;
+}
+#firstfield:hover {
+  background: #a8e6cf ;
+}
+#secondfield {
+  padding-left: 2px;
+  background-color: #f9cf6c;
+}
+#secondfield:hover {
+  background: #a8e6cf ;
+}
+#thirdfield {
+  padding-left: 2px;
+  background-color: #f9cf6c;
+}
+#thirdfield:hover {
+  background: #a8e6cf ;
+}
+#fourthfield {
+  padding-left: 2px;
+  background-color: #f9cf6c;
+}
+#fourthfield:hover {
+  background: #a8e6cf ;
+}
+form #checkbox {
+  padding: 2px 2px;
+}
+.submit {
+  background-color: #f9cf6c;
 }
 
 
-/* -----------^CONTENT^---------------*/
+
+
+
+
+
+
+/*-----------^CONTENT^--------------*/
 /*-------------FOOTER --------*/
 .footer {
   display: grid;
@@ -143,6 +221,7 @@ padding: 40px 20px;
 
 /*-------------^FOOTER^ --------*/
 
+
 /*---- MEDIA QUERIES For Nav Bar---------*/
             /* 880px screen */
 @media screen and (min-width: 880px) {
@@ -169,14 +248,12 @@ padding: 40px 20px;
   font-size: 30px;
   padding: 0px;
   color: #FFF;
-
 }
 .home {
   grid-area: home;
   background: #100716;
   padding: 40px 20px;
   color: #FFF;
-
 }
 .menu {
   grid-area: menu;

@@ -6,7 +6,7 @@
 body {
   font-size: 16px;
   color: #fff;
-  background-image: url("./tile22.jpg");
+  background-color: #E5E9EA;
   font-family: 'Oxygen', sans-serif;
 }
 .navbar a:link {
@@ -29,7 +29,6 @@ body {
   padding: 20px;
   background-color: #D8D8C5;
   border-radius: 5px;
-  background-image: url("./navwood.jpg");
 
 }
 
@@ -90,12 +89,12 @@ padding: 40px 20px;
 }
 .menu-details h1 {
   text-align: center;
-  color: #fff;
+  color: #000;
 }
 .menu-details p {
   text-align: center;
   margin-top:10px;
-  color: #fff;
+  color: #000;
 }
 .cards {
   display: grid;
