@@ -35,11 +35,12 @@ body {
   background-color: #D8D8C5;
   border-radius: 5px;
   background-image: url("./navwood.jpg");
+  transition: 1s ease-in-out;
 
 }
 
 /*-------------NAVIGATION BAR --------*/
-/*.navbar {
+.navbar {
   display: grid;
   grid-template-columns: 48% 13% 13% 13% 13% ;
   grid-template-rows: repeat(1, 100%);
@@ -48,7 +49,7 @@ body {
   margin-top: 30px;
   margin-left: 60px;
   margin-right: 60px;
-  background-color: #f6b319;
+  background-color: #100716;
   text-align: center;
   padding: 20px;
   font-size: 20px;
@@ -61,31 +62,38 @@ font-family: cursive;
 color: #006600;
 font-size: 30px;
 padding: 0px;
+color: #FFF;
 
 }
 .home {
 grid-area: home;
-background: #f9cf6c;
+background: #100716;
 padding: 40px 20px;
+color: #FFF;
+
 
 }
 .menu {
 grid-area: menu;
-background: #f9cf6c;
+background: #100716;
 padding: 40px 20px;
+color: #FFF;
 }
 .about {
 grid-area: about;
-background: #f9cf6c;
+background: #100716;
 padding: 40px 20px;
+color: #FFF;
 }
 .contact {
 grid-area: contact;
-background: #f9cf6c;
+background: #100716;
 padding: 40px 20px;
-}*/
+color: #FFF;
+}
 
-/*------------^NAVIGATION BAR^ --------*/
+
+/* NAV BAR *//*------------^NAVIGATION BAR^ --------*/
 /* -----------CONTENT---------------*/
 .aboutwebsite {
   margin-left: 60px;
@@ -144,57 +152,116 @@ padding: 40px 20px;
 /*-------------^FOOTER^ --------*/
 
 /*---- MEDIA QUERIES For Nav Bar---------*/
-            /* 880px screen */
-@media screen and (min-width: 880px) {
+/* 1050px Screen */
+@media(max-width: 1050px) {
   .navbar {
     display: grid;
-    grid-template-columns: 48% 13% 13% 13% 13% ;
-    grid-template-rows: repeat(1, 100%);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 50%);
     grid-template-areas:
-    "logo home menu about contact";
-    margin-top: 30px;
-    margin-left: 60px;
-    margin-right: 60px;
-    background-color: #100716;
-    text-align: center;
-    padding: 20px;
-    font-size: 20px;
+    "logo home menu"
+    "logo about contact";
+    padding: 10px;
+  }
+  .logo {
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+  .home {
+    grid-area: home;
+
+  }
+  .menu {
+    grid-area: menu;
+
+  }
+  .about {
+    grid-area: about;
+
+  }
+  .contact {
+    grid-area: contact;
+
   }
 }
-.logo {
-  grid-area: logo;
-  padding: 20px 20px;
-  font-family: cursive;
-  color: #006600;
-  font-size: 30px;
-  padding: 0px;
-  color: #FFF;
+/* 580px Screen */
+@media(max-width: 580px) {
+  .navbar {
+    display: grid;
+    height: 630px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 18.75% 18.75% 18.75% 18.75% ;
+    grid-template-areas:
+    "logo"
+    "home"
+    "menu"
+    "about"
+    "contact";
+    background-color: rgba(16, 7, 22, 0.8) ;
+
+  }
+  .logo {
+    grid-area: logo;
+    adding: 10px 10px 40px 10px;
+
+  }
+  .home {
+    grid-area: home;
+    padding: 2px;
+    margin-bottom: 10px;
+  }
+  .menu {
+    grid-area: menu;
+    padding: 2px;
+  }
+  .about {
+    grid-area: about;
+    padding: 2px;
+  }
+  .contact {
+    grid-area: contact;
+    padding: 2px;
+  }
+  .navbar a {
+    padding: 10px 80px;
+  }
 
 }
-.home {
-  grid-area: home;
-  background: #100716;
-  padding: 40px 20px;
-  color: #FFF;
 
-}
-.menu {
-  grid-area: menu;
-  background: #100716;
-  padding: 40px 20px;
-  color: #FFF;
-}
-.about {
-  grid-area: about;
-  background: #100716;
-  padding: 40px 20px;
-  color: #FFF;
-}
-.contact {
-  grid-area: contact;
-  background: #100716;
-  padding: 40px 20px;
-  color: #FFF;
-}
 
-       /* 880px screen */
+
+
+
+
+
+
+  /*----^ MEDIA QUERIES For Nav Bar^---------*/
+
+
+       /*---- MEDIA QUERIES For Footer---------*/
+       @media(max-width: 740px) {
+         .footer {
+           display: grid;
+           grid-template-columns: 1fr;
+           grid-template-rows: repeat(auto, minmax(1fr, 100px));
+           grid-template-areas:
+           "hours"
+           "address"
+           "quote";
+           margin-top: 10px;
+           padding: 5px;
+           text-align: center;
+         }
+         .hours {
+           grid-area: hours;
+           padding:10px 10px 20px 10px;
+         }
+         .address {
+           grid-area: address;
+           padding: 10px 10px 20px 10px;
+         }
+         .quote {
+           grid-area: quote;
+           padding: 10px 10px 20px 10px;
+
+       /*----^ MEDIA QUERIES For Footer^---------*/
