@@ -16,13 +16,13 @@ body {
   color: #000;
 }
 .navbar a:hover {
-  color: grey;
+  color: #fff;
   transition: 0.2s;
   background-color: #fff;
   border-radius: 25px;
 }
 .navbar a:active {
-  color: blue;
+  color: black;
 }
 .navbar a {
   text-decoration: none;
@@ -44,7 +44,7 @@ body {
   margin-top: 30px;
   margin-left: 60px;
   margin-right: 60px;
-  background-color: #100716;
+  background-color: #000;
   text-align: center;
   padding: 20px;
   font-size: 20px;
@@ -62,7 +62,7 @@ color: #FFF;
 }
 .home {
 grid-area: home;
-background: #100716;
+background: #000;
 padding: 40px 20px;
 color: #FFF;
 
@@ -70,19 +70,19 @@ color: #FFF;
 }
 .menu {
 grid-area: menu;
-background: #100716;
+background: #000;
 padding: 40px 20px;
 color: #FFF;
 }
 .about {
 grid-area: about;
-background: #100716;
+background: #000;
 padding: 40px 20px;
 color: #FFF;
 }
 .contact {
 grid-area: contact;
-background: #100716;
+background: #000;
 padding: 40px 20px;
 color: #FFF;
 }
@@ -106,335 +106,1303 @@ color: #FFF;
   margin-top:10px;
   color: #fff;
 }
-.cards {
+.allcards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 20% 20% 20% 20% 20%;
-  grid-gap: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 44px;
-  margin-bottom: 40px;
-
-
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 100px 400px 400px 100px 400px 400px 100px 400px 400px;
   grid-template-areas:
-  "c1 c2 c3 c4"
-  "c5 c6 c7 c8"
-  "c9 c10 c11 c12"
-  "c13 c14 c15 c16"
-  "c17 c18 c19 c20";
-
-
-
+  "first-menu first-menu"
+  "c1 c2"
+  "c3 c4"
+  "second-menu second-menu"
+  "c5 c6"
+  "c7 c8"
+  "third-menu third-menu"
+  "c9 c10"
+  "c11 c12";
+  padding: 0px;
+  margin-left: 100px;
+  margin-right: 50px;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  justify-content: center;
+  justify-items: center;
 }
+.first-menu {
+  grid-area: first-menu;
+  background: black;
+  padding: 50px 60%;
+  margin-bottom: 20px;
+}
+
 .c1 {
   grid-area: c1;
-  width: 200px;
-  height: 200px;
+
+  border: 5px solid black;
+
+
 }
+.c2 {
+  grid-area: c2;
+
+  border: 5px solid black;
+}
+.c3 {
+  grid-area: c3;
+
+  border: 5px solid black;
+}
+.c4 {
+  grid-area: c4;
+
+  border: 5px solid black;
+}
+.second-menu {
+  grid-area: second-menu;
+  background: black;
+  padding: 50px 55%;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+.c5 {
+  grid-area: c5;
+
+  border: 5px solid black;
+}
+.c6 {
+  grid-area: c6;
+
+  border: 5px solid black;
+}
+.c7 {
+  grid-area: c7;
+
+  border: 5px solid black;
+}
+.c8 {
+  grid-area: c8;
+
+  border: 5px solid black;
+}
+.third-menu {
+  grid-area: third-menu;
+  background: black;
+  padding: 50px 60%;
+  margin-bottom: 20px;
+  white-space: nowrap
+}
+.c9 {
+  grid-area: c9;
+
+  border: 5px solid black;
+}
+.c10 {
+  grid-area: c10;
+
+  border: 5px solid black;
+}
+.c11 {
+  grid-area: c11;
+  border: 5px solid black;
+}
+.c12 {
+  grid-area: c12;
+  border: 5px solid black;
+}
+
+
 .t1 {
   position: absolute;
   transform: translate(0px, -110%);
   letter-spacing: 2px;
   background-color: #161616;
-
-  width: 200px;
-  text-align: center;
   opacity: 0.9;
-}
-.c2 {
-  grid-area: c2;
-  width: 200px;
-  height: 200px;
+  text-align: center;
+  width: 260px;
+  justify-content: center;
+  overflow: hidden;
+
 }
 .t2 {
   position: absolute;
   transform: translate(0px, -110%);
   letter-spacing: 2px;
   background-color: #161616;
-
-  width: 200px;
-  text-align: center;
   opacity: 0.9;
-}
-.c3 {
-  grid-area: c3;
-  width: 200px;
-  height: 200px;
+  text-align: center;
+  width: 260px;
+  justify-content: center;
+  overflow: hidden;
+
 }
 .t3 {
   position: absolute;
   transform: translate(0px, -110%);
   letter-spacing: 2px;
   background-color: #161616;
-
-  width: 200px;
-  text-align: center;
   opacity: 0.9;
-}
-
-.c4 {
-  grid-area: c4;
-  width: 200px;
-  height: 200px;
+  text-align: center;
+  width: 260px;
+  justify-content: center;
+  overflow: hidden;
 }
 .t4 {
   position: absolute;
   transform: translate(0px, -110%);
   letter-spacing: 2px;
   background-color: #161616;
-
-  width: 200px;
-  text-align: center;
   opacity: 0.9;
-}
-.c5 {
-  grid-area: c5;
-  width: 200px;
-  height: 200px;
+  text-align: center;
+  width: 260px;
+  justify-content: center;
+  overflow: hidden;
 }
 .t5 {
   position: absolute;
   transform: translate(0px, -110%);
   letter-spacing: 2px;
   background-color: #161616;
-
-  width: 200px;
-  text-align: center;
   opacity: 0.9;
-}
-.c6 {
-  grid-area: c6;
-  width: 200px;
-  height: 200px;
+  text-align: center;
+  width: 260px;
+  justify-content: center;
+  overflow: hidden;
+
 }
 .t6 {
   position: absolute;
   transform: translate(0px, -110%);
   letter-spacing: 2px;
   background-color: #161616;
-
-  width: 200px;
-  text-align: center;
   opacity: 0.9;
-}
-.c7 {
-  grid-area: c7;
-  width: 200px;
-  height: 200px;
+  text-align: center;
+  width: 260px;
+  justify-content: center;
+  overflow: hidden;
+
 }
 .t7 {
   position: absolute;
   transform: translate(0px, -110%);
   letter-spacing: 2px;
   background-color: #161616;
-
-  width: 200px;
-  text-align: center;
   opacity: 0.9;
-}
-.c8 {
-  grid-area: c8;
-  width: 200px;
-  height: 200px;
+  text-align: center;
+  width: 260px;
+  justify-content: center;
+  overflow: hidden;
+
 }
 .t8 {
   position: absolute;
   transform: translate(0px, -110%);
   letter-spacing: 2px;
   background-color: #161616;
-
-  width: 200px;
-  text-align: center;
   opacity: 0.9;
-}
-.c9 {
-  grid-area: c9;
-  width: 200px;
-  height: 200px;
+  text-align: center;
+  width: 260px;
+  justify-content: center;
+  overflow: hidden;
+
 }
 .t9 {
   position: absolute;
   transform: translate(0px, -110%);
   letter-spacing: 2px;
   background-color: #161616;
-
-  width: 200px;
-  text-align: center;
   opacity: 0.9;
-}
-.c10 {
-  grid-area: c10;
-  width: 200px;
-  height: 200px;
+  text-align: center;
+  width: 260px;
+  justify-content: center;
+  overflow: hidden;
+
 }
 .t10 {
   position: absolute;
   transform: translate(0px, -110%);
   letter-spacing: 2px;
   background-color: #161616;
-
-  width: 200px;
-  text-align: center;
   opacity: 0.9;
-}
-.c11 {
-  grid-area: c11;
-  width: 200px;
-  height: 200px;
+  text-align: center;
+  width: 260px;
+  justify-content: center;
+  overflow: hidden;
+
 }
 .t11 {
   position: absolute;
   transform: translate(0px, -110%);
   letter-spacing: 2px;
   background-color: #161616;
-
-  width: 200px;
-  text-align: center;
   opacity: 0.9;
-}
+  text-align: center;
+  width: 260px;
+  justify-content: center;
+  overflow: hidden;
 
-.c12 {
-  grid-area: c12;
-  width: 200px;
-  height: 200px;
 }
 .t12 {
   position: absolute;
   transform: translate(0px, -110%);
   letter-spacing: 2px;
   background-color: #161616;
-
-  width: 200px;
-  text-align: center;
   opacity: 0.9;
-}
-.c13 {
-  grid-area: c13;
-  width: 200px;
-  height: 200px;
-}
-.t13 {
-  position: absolute;
-  transform: translate(0px, -110%);
-  letter-spacing: 2px;
-  background-color: #161616;
-
-  width: 200px;
   text-align: center;
-  opacity: 0.9;
-}
-.c14 {
-  grid-area: c14;
-  width: 200px;
-  height: 200px;
-}
-.t14 {
-  position: absolute;
-  transform: translate(0px, -110%);
-  letter-spacing: 2px;
-  background-color: #161616;
+  width: 260px;
+  justify-content: center;
+  overflow: hidden;
 
-  width: 200px;
-  text-align: center;
-  opacity: 0.9;
-}
-.c15 {
-  grid-area: c15;
-  width: 200px;
-  height: 200px;
-}
-.t15 {
-  position: absolute;
-  transform: translate(0px, -110%);
-  letter-spacing: 2px;
-  background-color: #161616;
-
-  width: 200px;
-  text-align: center;
-  opacity: 0.9;
-}
-.c16 {
-  grid-area: c16;
-  width: 200px;
-  height: 200px;
-}
-.t16 {
-  position: absolute;
-  transform: translate(0px, -110%);
-  letter-spacing: 2px;
-  background-color: #161616;
-
-  width: 200px;
-  text-align: center;
-  opacity: 0.9;
-}
-.c17 {
-  grid-area: c17;
-  width: 200px;
-  height: 200px;
-}
-.t17 {
-  position: absolute;
-  transform: translate(0px, -110%);
-  letter-spacing: 2px;
-  background-color: #161616;
-
-  width: 200px;
-  text-align: center;
-  opacity: 0.9;
-}
-.c18 {
-  grid-area: c18;
-  width: 200px;
-  height: 200px;
-}
-.t18 {
-  position: absolute;
-  transform: translate(0px, -110%);
-  letter-spacing: 2px;
-  background-color: #161616;
-
-  width: 200px;
-  text-align: center;
-  opacity: 0.9;
-}
-.c19 {
-  grid-area: c19;
-  width: 200px;
-  height: 200px;
-}
-.t19 {
-  position: absolute;
-  transform: translate(0px, -110%);
-  letter-spacing: 2px;
-  background-color: #161616;
-
-  width: 200px;
-  text-align: center;
-  opacity: 0.9;
-}
-.c20 {
-  grid-area: c20;
-  width: 200px;
-  height: 200px;
-}
-.t20 {
-  position: absolute;
-  transform: translate(0px, -110%);
-  letter-spacing: 2px;
-  background-color: #161616;
-
-  width: 200px;
-  text-align: center;
-  opacity: 0.9;
 }
 
 
 
+@media(max-width: 900px) {
+  .allcards {
+    display: grid;
+    text-align: center;
+    position: relative;
+
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 90px 300px 300px 90px 300px 300px 90px 300px 300px;
+    grid-template-areas:
+    "first-menu first-menu"
+    "c1 c2"
+    "c3 c4"
+    "second-menu second-menu"
+    "c5 c6"
+    "c7 c8"
+    "third-menu third-menu"
+    "c9 c10"
+    "c11 c12";
+  }
+  .first-menu {
+    grid-area: first-menu;
+    background: black;
+    padding: 50px 50%;
+    margin-bottom: 20px;
+
+  }
+
+  .c1 {
+    grid-area: c1;
+
+    border: 5px solid black;
+
+
+  }
+  .c2 {
+    grid-area: c2;
+
+    border: 5px solid black;
+  }
+  .c3 {
+    grid-area: c3;
+
+    border: 5px solid black;
+  }
+  .c4 {
+    grid-area: c4;
+
+    border: 5px solid black;
+  }
+  .second-menu {
+    grid-area: second-menu;
+    background: black;
+    padding: 50px 50%;
+    margin-bottom: 20px;
+    white-space: nowrap;
+  }
+  .c5 {
+    grid-area: c5;
+
+    border: 5px solid black;
+  }
+  .c6 {
+    grid-area: c6;
+
+    border: 5px solid black;
+  }
+  .c7 {
+    grid-area: c7;
+
+    border: 5px solid black;
+  }
+  .c8 {
+    grid-area: c8;
+
+    border: 5px solid black;
+  }
+  .third-menu {
+    grid-area: third-menu;
+    background: black;
+    padding: 50px 60%;
+    margin-bottom: 20px;
+    white-space: nowrap
+  }
+  .c9 {
+    grid-area: c9;
+
+    border: 5px solid black;
+  }
+  .c10 {
+    grid-area: c10;
+
+    border: 5px solid black;
+  }
+  .c11 {
+    grid-area: c11;
+    border: 5px solid black;
+  }
+  .c12 {
+    grid-area: c12;
+    border: 5px solid black;
+  }
+  .t1 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 200px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .t2 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 200px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+
+  }
+  .t3 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 200px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .t4 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 200px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .t5 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 200px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .t6 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 200px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .t7 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 200px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .t8 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 200px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .t9 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 200px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .t10 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 200px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .t11 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 200px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+
+  }
+  .t12 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 200px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+
+  }
 
 
 
+
+
+}
+@media(max-width: 700px) {
+  .allcards {
+    display: grid;
+    text-align: center;
+    position: relative;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 50px 200px 200px 50px 200px 200px 50px 200px 200px;
+    grid-template-areas:
+    "first-menu first-menu"
+    "c1 c2"
+    "c3 c4"
+    "second-menu second-menu"
+    "c5 c6"
+    "c7 c8"
+    "third-menu third-menu"
+    "c9 c10"
+    "c11 c12";
+  }
+  .first-menu {
+    grid-area: first-menu;
+    background: black;
+    padding: 10px 200px;
+    margin-bottom: 0px;
+  }
+
+  .c1 {
+    grid-area: c1;
+
+    border: 5px solid black;
+
+
+  }
+  .c2 {
+    grid-area: c2;
+
+    border: 5px solid black;
+  }
+  .c3 {
+    grid-area: c3;
+
+    border: 5px solid black;
+  }
+  .c4 {
+    grid-area: c4;
+
+    border: 5px solid black;
+  }
+  .second-menu {
+    grid-area: second-menu;
+    background: black;
+    padding: 10px 150px;
+    margin-bottom: 0px;
+    white-space: nowrap;
+  }
+  .c5 {
+    grid-area: c5;
+
+    border: 5px solid black;
+  }
+  .c6 {
+    grid-area: c6;
+
+    border: 5px solid black;
+  }
+  .c7 {
+    grid-area: c7;
+
+    border: 5px solid black;
+  }
+  .c8 {
+    grid-area: c8;
+
+    border: 5px solid black;
+  }
+  .third-menu {
+    grid-area: third-menu;
+    background: black;
+    padding: 10px 200px;
+    margin-bottom: 0px;
+    white-space: nowrap
+  }
+  .c9 {
+    grid-area: c9;
+
+    border: 5px solid black;
+  }
+  .c10 {
+    grid-area: c10;
+
+    border: 5px solid black;
+  }
+  .c11 {
+    grid-area: c11;
+    border: 5px solid black;
+  }
+  .c12 {
+    grid-area: c12;
+    border: 5px solid black;
+  }
+  .t1 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 130px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t2 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 130px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t3 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 130px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t4 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 130px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t5 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 130px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t6 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 130px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t7 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 130px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t8 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 130px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t9 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 130px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t10 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 130px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t11 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 130px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t12 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 130px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+
+}
+@media(max-width: 500px) {
+  .allcards {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 50px 200px 200px 200px 200px 50px 200px 200px 200px 200px 50px 200px 200px 200px 200px;
+    grid-template-areas:
+    "first-menu"
+    "c1"
+    "c2"
+    "c3"
+    "c4"
+    "second-menu"
+    "c5"
+    "c6"
+    "c7"
+    "c8"
+    "third-menu"
+    "c9"
+    "c10"
+    "c11"
+    "c12";
+    margin: 10px;
+    grid-gap: 20px;
+
+  }
+  .first-menu {
+    grid-area: first-menu;
+    background: black;
+    padding: 10px 200px;
+    margin-bottom: 0px;
+
+  }
+
+  .c1 {
+    grid-area: c1;
+    border: 5px solid black;
+
+
+  }
+  .c2 {
+    grid-area: c2;
+
+    border: 5px solid black;
+  }
+  .c3 {
+    grid-area: c3;
+
+    border: 5px solid black;
+  }
+  .c4 {
+    grid-area: c4;
+
+    border: 5px solid black;
+  }
+  .second-menu {
+    grid-area: second-menu;
+    background: black;
+    padding: 10px 200px;
+    margin-bottom: 0px;
+
+
+    white-space: nowrap;
+  }
+  .c5 {
+    grid-area: c5;
+
+    border: 5px solid black;
+  }
+  .c6 {
+    grid-area: c6;
+
+    border: 5px solid black;
+  }
+  .c7 {
+    grid-area: c7;
+
+    border: 5px solid black;
+  }
+  .c8 {
+    grid-area: c8;
+
+    border: 5px solid black;
+  }
+  .third-menu {
+    grid-area: third-menu;
+    background: black;
+
+    padding: 10px 200px;
+    margin-bottom: 0px;
+
+    white-space: nowrap
+  }
+  .c9 {
+    grid-area: c9;
+
+    border: 5px solid black;
+  }
+  .c10 {
+    grid-area: c10;
+
+    border: 5px solid black;
+  }
+  .c11 {
+    grid-area: c11;
+    border: 5px solid black;
+  }
+  .c12 {
+    grid-area: c12;
+    border: 5px solid black;
+  }
+  .t1 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0.6rem;
+
+  }
+  .t2 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t3 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t4 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t5 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t6 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t7 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t8 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t9 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t10 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t11 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t12 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+}
+@media(max-width: 350px) {
+  .allcards {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 50px 200px 200px 200px 200px 50px 200px 200px 200px 200px 50px 200px 200px 200px 200px;
+    grid-template-areas:
+    "first-menu"
+    "c1"
+    "c2"
+    "c3"
+    "c4"
+    "second-menu"
+    "c5"
+    "c6"
+    "c7"
+    "c8"
+    "third-menu"
+    "c9"
+    "c10"
+    "c11"
+    "c12";
+    margin: 10px;
+    grid-gap: 10px;
+
+  }
+  .first-menu {
+    grid-area: first-menu;
+    background: black;
+
+    margin-bottom: 0px;
+
+  }
+
+  .c1 {
+    grid-area: c1;
+    border: 5px solid black;
+
+
+  }
+  .c2 {
+    grid-area: c2;
+
+    border: 5px solid black;
+  }
+  .c3 {
+    grid-area: c3;
+
+    border: 5px solid black;
+  }
+  .c4 {
+    grid-area: c4;
+
+    border: 5px solid black;
+  }
+  .second-menu {
+    grid-area: second-menu;
+    background: black;
+
+    margin-bottom: 0px;
+
+
+    white-space: nowrap;
+  }
+  .c5 {
+    grid-area: c5;
+
+    border: 5px solid black;
+  }
+  .c6 {
+    grid-area: c6;
+
+    border: 5px solid black;
+  }
+  .c7 {
+    grid-area: c7;
+
+    border: 5px solid black;
+  }
+  .c8 {
+    grid-area: c8;
+
+    border: 5px solid black;
+  }
+  .third-menu {
+    grid-area: third-menu;
+    background: black;
+
+
+    margin-bottom: 0px;
+
+    white-space: nowrap
+  }
+  .c9 {
+    grid-area: c9;
+
+    border: 5px solid black;
+  }
+  .c10 {
+    grid-area: c10;
+
+    border: 5px solid black;
+  }
+  .c11 {
+    grid-area: c11;
+    border: 5px solid black;
+  }
+  .c12 {
+    grid-area: c12;
+    border: 5px solid black;
+  }
+  .t1 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0.6rem;
+
+  }
+  .t2 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t3 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t4 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t5 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t6 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t7 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t8 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t9 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t10 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t11 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+  .t12 {
+    position: absolute;
+    transform: translate(0px, -110%);
+    letter-spacing: 2px;
+    background-color: #161616;
+    opacity: 0.9;
+    text-align: center;
+    width: 140px;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .6rem;
+  }
+}
 
 
 /* -----------^CONTENT^-------------*/
@@ -451,20 +1419,20 @@ color: #FFF;
 }
 .hours {
   grid-area: hours;
-  background-color: #161616;
+  background-color: #000;
   padding: 50px;
   word-spacing: 10px;
 
 }
 .address {
   grid-area: address;
-  background-color: #161616;
+  background-color: #000;
   padding: 50px;
 
 }
 .quote {
   grid-area: quote;
-  background-color: #161616;
+  background-color: #000;
   padding: 50px;
 
 }
@@ -517,6 +1485,9 @@ color: #FFF;
 }
 /* 580px Screen */
 @media(max-width: 580px) {
+  .container {
+    margin:0px;
+  }
   .navbar {
     display: grid;
     height: 630px;
@@ -529,6 +1500,59 @@ color: #FFF;
     "about"
     "contact";
     background-color: rgba(16, 7, 22, 0.8) ;
+
+  }
+  .logo {
+    grid-area: logo;
+    padding: 10px 10px 40px 10px;
+
+  }
+  .home {
+    grid-area: home;
+    padding: 2px;
+    margin-bottom: 10px;
+  }
+  .menu {
+    grid-area: menu;
+    padding: 2px;
+  }
+  .about {
+    grid-area: about;
+    padding: 2px;
+  }
+  .contact {
+    grid-area: contact;
+    padding: 2px;
+  }
+  .navbar a {
+    padding: 10px 80px;
+  }
+
+}
+@media(max-width: 400px) {
+  .container {
+    width: 100%
+    margin: 0px;
+    padding: 0px;
+  }
+  .body {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .navbar {
+    display: grid;
+    height: 630px;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 18.75% 18.75% 18.75% 18.75% ;
+    grid-template-areas:
+    "logo"
+    "home"
+    "menu"
+    "about"
+    "contact";
+    background-color: rgba(16, 7, 22, 0.8) ;
+    margin: 2px;
 
   }
   .logo {
@@ -556,7 +1580,6 @@ color: #FFF;
   .navbar a {
     padding: 10px 80px;
   }
-
 }
 
 
@@ -568,52 +1591,32 @@ color: #FFF;
 
   /*----^ MEDIA QUERIES For Nav Bar^---------*/
 
-  /* ---MEDIA QUERIES FOR CONTENT ----*/
-  @media(max-width: 950px) {
-    .cards {
+
+
+  /*---- MEDIA QUERIES For Footer---------*/
+  @media(max-width: 740px) {
+    .footer {
       display: grid;
-      width: 100%;
-      grid-template-columns: 50% 50%;
-      grid-template-rows: repeat(7, 500px);
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(auto, minmax(1fr, 50%));
       grid-template-areas:
-      "c1 c2 c3"
-      "c4 c5 c6"
-      "c7 c8 c9"
-      "c10 c11 c12"
-      "c13 c14 c15"
-      "c16 c17 c18"
-      "c19 c20";
+      "hours"
+      "address"
+      "quote";
+      margin-top: 10px;
+      padding: 5px;
+      text-align: center;
     }
-  }
+    .hours {
+      grid-area: hours;
+      padding:10px 10px 20px 10px;
+    }
+    .address {
+      grid-area: address;
+      padding: 10px 10px 20px 10px;
+    }
+    .quote {
+      grid-area: quote;
+      padding: 10px 10px 20px 10px;
 
-
-  /* ---MEDIA QUERIES FOR CONTENT ----*/
-
-
-       /*---- MEDIA QUERIES For Footer---------*/
-       @media(max-width: 740px) {
-         .footer {
-           display: grid;
-           grid-template-columns: 1fr;
-           grid-template-rows: repeat(auto, minmax(1fr, 100px));
-           grid-template-areas:
-           "hours"
-           "address"
-           "quote";
-           margin-top: 10px;
-           padding: 5px;
-           text-align: center;
-         }
-         .hours {
-           grid-area: hours;
-           padding:10px 10px 20px 10px;
-         }
-         .address {
-           grid-area: address;
-           padding: 10px 10px 20px 10px;
-         }
-         .quote {
-           grid-area: quote;
-           padding: 10px 10px 20px 10px;
-
-       /*----^ MEDIA QUERIES For Footer^---------*/
+  /*----^ MEDIA QUERIES For Footer^---------*/

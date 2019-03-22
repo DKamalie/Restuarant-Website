@@ -21,13 +21,14 @@ body {
   color: #000;
 }
 .navbar a:hover {
-  color: grey;
+  color: #fff;
   transition: 0.2s;
   background-color: #fff;
   border-radius: 25px;
+
 }
 .navbar a:active {
-  color: blue;
+  color: black;
 }
 .navbar a {
   text-decoration: none;
@@ -36,7 +37,7 @@ body {
   border-radius: 5px;
   background-image: url("./navwood.jpg");
   transition: 1s ease-in-out;
-
+  color: black;
 }
 
 /*-------------NAVIGATION BAR --------*/
@@ -49,7 +50,7 @@ body {
   margin-top: 30px;
   margin-left: 60px;
   margin-right: 60px;
-  background-color: #100716;
+  background-color: #000;
   text-align: center;
   padding: 20px;
   font-size: 20px;
@@ -67,7 +68,7 @@ color: #FFF;
 }
 .home {
 grid-area: home;
-background: #100716;
+background: #000;
 padding: 40px 20px;
 color: #FFF;
 
@@ -75,19 +76,19 @@ color: #FFF;
 }
 .menu {
 grid-area: menu;
-background: #100716;
+background: #000;
 padding: 40px 20px;
 color: #FFF;
 }
 .about {
 grid-area: about;
-background: #100716;
+background: #000;
 padding: 40px 20px;
 color: #FFF;
 }
 .contact {
 grid-area: contact;
-background: #100716;
+background: #000;
 padding: 40px 20px;
 color: #FFF;
 }
@@ -99,16 +100,27 @@ color: #FFF;
   margin-left: 60px;
   margin-right: 60px;
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 20px;
   color: #fff;
+  font-family: inherit;
+  padding: 20px;
 }
 .aboutwebsite h1 {
   text-align: center;
+  padding: 20px;
+}
+.aboutwebsite p {
+  padding: 50px;
 }
 
-
+.backgroundsect {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: rgb(0, 0, 0) solid 5px;
+}
 /* -----------^CONTENT^---------------*/
 /*-------------FOOTER --------*/
+/*-------------FOOTER --------*/
+
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 33.3%);
@@ -120,20 +132,20 @@ color: #FFF;
 }
 .hours {
   grid-area: hours;
-  background-color: #161616;
+  background-color: #000;
   padding: 50px;
   word-spacing: 10px;
 
 }
 .address {
   grid-area: address;
-  background-color: #161616;
+  background-color: #000;
   padding: 50px;
 
 }
 .quote {
   grid-area: quote;
-  background-color: #161616;
+  background-color: #000;
   padding: 50px;
 
 }
@@ -150,6 +162,7 @@ color: #FFF;
 
 
 /*-------------^FOOTER^ --------*/
+
 
 /*---- MEDIA QUERIES For Nav Bar---------*/
 /* 1050px Screen */
@@ -182,6 +195,10 @@ color: #FFF;
   .contact {
     grid-area: contact;
 
+  }
+  iframe {
+    width: 600px;
+    height: 400px;
   }
 }
 /* 580px Screen */
@@ -225,6 +242,10 @@ color: #FFF;
   .navbar a {
     padding: 10px 80px;
   }
+  iframe {
+    width: 300px;
+    height: 200px;
+  }
 
 }
 
@@ -238,30 +259,31 @@ color: #FFF;
   /*----^ MEDIA QUERIES For Nav Bar^---------*/
 
 
-       /*---- MEDIA QUERIES For Footer---------*/
-       @media(max-width: 740px) {
-         .footer {
-           display: grid;
-           grid-template-columns: 1fr;
-           grid-template-rows: repeat(auto, minmax(1fr, 100px));
-           grid-template-areas:
-           "hours"
-           "address"
-           "quote";
-           margin-top: 10px;
-           padding: 5px;
-           text-align: center;
-         }
-         .hours {
-           grid-area: hours;
-           padding:10px 10px 20px 10px;
-         }
-         .address {
-           grid-area: address;
-           padding: 10px 10px 20px 10px;
-         }
-         .quote {
-           grid-area: quote;
-           padding: 10px 10px 20px 10px;
-
-       /*----^ MEDIA QUERIES For Footer^---------*/
+  /*---- MEDIA QUERIES For Footer---------*/
+  @media(max-width: 740px) {
+    .footer {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(auto, minmax(1fr, 50%));
+      grid-template-areas:
+      "hours"
+      "address"
+      "quote";
+      margin-top: 10px;
+      padding: 5px;
+      text-align: center;
+    }
+    .hours {
+      grid-area: hours;
+      padding:10px 10px 20px 10px;
+    }
+    .address {
+      grid-area: address;
+      padding: 10px 10px 20px 10px;
+    }
+    .quote {
+      grid-area: quote;
+      padding: 10px 10px 20px 10px;
+    }
+  }
+  /*----^ MEDIA QUERIES For Footer^---------*/
